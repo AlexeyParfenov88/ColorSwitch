@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet var blueslider: UISlider!
     
     
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,17 +28,13 @@ class ViewController: UIViewController {
         redSLider.tintColor = .red
         greenSlider.tintColor = .green
         
-        redSLider.minimumValue = 0.0
-        redSLider.maximumValue = 1.0
         redSLider.value = 0.0
-        
-        greenSlider.minimumValue = 0.0
-        greenSlider.maximumValue = 1.0
         greenSlider.value = 0.0
-        
-        blueslider.minimumValue = 0.0
-        blueslider.maximumValue = 1.0
         blueslider.value = 0.0
+        
+        redSLider.thumbTintColor = .purple
+        greenSlider.thumbTintColor = .purple
+        blueslider.thumbTintColor = .purple
         
     }
 
@@ -42,10 +42,17 @@ class ViewController: UIViewController {
         colorView.backgroundColor = UIColor(red: CGFloat(redSLider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueslider.value), alpha: 1)
     }
     
-    @IBAction func grbChangeColor(_ sender: Any) {
+    @IBAction func grbChangeColor(_ sender: UISlider) {
+        switch sender.tag {
+        case 0:
+            redLabel.text = String(format: "%.2f", sender.value)
+        case 1:
+            greenLabel.text = String(format: "%.2f", sender.value)
+        case 2:
+            blueLabel.text = String(format: "%.2f", sender.value)
+        default: break
+        }
         colorChange()
     }
-    
-
 }
 
