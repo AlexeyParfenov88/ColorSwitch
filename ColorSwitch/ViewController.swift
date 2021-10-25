@@ -28,9 +28,9 @@ class ViewController: UIViewController {
         redSLider.tintColor = .red
         greenSlider.tintColor = .green
         
-        redSLider.value = 0.0
-        greenSlider.value = 0.0
-        blueslider.value = 0.0
+        redSLider.value = 0.25
+        greenSlider.value = 0.5
+        blueslider.value = 0.75
         
         redSLider.thumbTintColor = .purple
         greenSlider.thumbTintColor = .purple
