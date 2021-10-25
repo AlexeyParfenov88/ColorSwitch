@@ -36,6 +36,8 @@ class ViewController: UIViewController {
         greenSlider.thumbTintColor = .purple
         blueslider.thumbTintColor = .purple
         
+        colorChange()
+        
     }
 
     func colorChange() {
