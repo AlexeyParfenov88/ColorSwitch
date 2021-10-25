@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-Es-SOi">
-                                <rect key="frame" x="20" y="74" width="374" height="149"/>
+                                <rect key="frame" x="20" y="74" width="374" height="588"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-GZ-aDD">
-                                <rect key="frame" x="20" y="297" width="374" height="104"/>
+                                <rect key="frame" x="20" y="736" width="374" height="104"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-vV-SsY">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="104"/>
@@ -104,14 +104,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="1rr-lr-0gl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="205:896" id="5v1-Hr-4Wx"/>
                             <constraint firstItem="DcA-Es-SOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Gy-Zt-746"/>
                             <constraint firstItem="DcA-Es-SOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CcF-9N-yQB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFT-GZ-aDD" secondAttribute="trailing" constant="20" id="MbE-bN-0ly"/>
-                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pb4-kH-Ubh"/>
                             <constraint firstItem="CFT-GZ-aDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qfg-GA-iFe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CFT-GZ-aDD" secondAttribute="bottom" constant="461" id="WaP-MA-zmI"/>
                             <constraint firstItem="CFT-GZ-aDD" firstAttribute="top" secondItem="DcA-Es-SOi" secondAttribute="bottom" constant="74" id="ZYT-t5-FD2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CFT-GZ-aDD" secondAttribute="bottom" constant="22" id="nlZ-nx-fev"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcA-Es-SOi" secondAttribute="trailing" constant="20" id="obd-uh-QCq"/>
                         </constraints>
                     </view>
