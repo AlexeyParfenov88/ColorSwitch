@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9EA1D96F27246A68006E1C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1D96E27246A68006E1C09 /* AppDelegate.swift */; };
 		9EA1D97127246A68006E1C09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1D97027246A68006E1C09 /* SceneDelegate.swift */; };
-		9EA1D97327246A68006E1C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1D97227246A68006E1C09 /* ViewController.swift */; };
+		9EA1D97327246A68006E1C09 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1D97227246A68006E1C09 /* SettingsViewController.swift */; };
 		9EA1D97627246A68006E1C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA1D97427246A68006E1C09 /* Main.storyboard */; };
 		9EA1D97827246A6A006E1C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA1D97727246A6A006E1C09 /* Assets.xcassets */; };
 		9EA1D97B27246A6A006E1C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA1D97927246A6A006E1C09 /* LaunchScreen.storyboard */; };
+		9EFCD5A9273491F2005490D4 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCD5A8273491F2005490D4 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EA1D96B27246A68006E1C09 /* ColorSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA1D96E27246A68006E1C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EA1D97027246A68006E1C09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9EA1D97227246A68006E1C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EA1D97227246A68006E1C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9EA1D97527246A68006E1C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EA1D97727246A6A006E1C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA1D97A27246A6A006E1C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA1D97C27246A6A006E1C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFCD5A8273491F2005490D4 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				9EA1D96E27246A68006E1C09 /* AppDelegate.swift */,
 				9EA1D97027246A68006E1C09 /* SceneDelegate.swift */,
-				9EA1D97227246A68006E1C09 /* ViewController.swift */,
+				9EA1D97227246A68006E1C09 /* SettingsViewController.swift */,
 				9EA1D97427246A68006E1C09 /* Main.storyboard */,
+				9EFCD5A8273491F2005490D4 /* StartViewController.swift */,
 				9EA1D97727246A6A006E1C09 /* Assets.xcassets */,
 				9EA1D97927246A6A006E1C09 /* LaunchScreen.storyboard */,
 				9EA1D97C27246A6A006E1C09 /* Info.plist */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA1D97327246A68006E1C09 /* ViewController.swift in Sources */,
+				9EA1D97327246A68006E1C09 /* SettingsViewController.swift in Sources */,
+				9EFCD5A9273491F2005490D4 /* StartViewController.swift in Sources */,
 				9EA1D96F27246A68006E1C09 /* AppDelegate.swift in Sources */,
 				9EA1D97127246A68006E1C09 /* SceneDelegate.swift in Sources */,
 			);
