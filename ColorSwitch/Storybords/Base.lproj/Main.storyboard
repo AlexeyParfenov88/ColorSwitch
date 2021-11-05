@@ -173,12 +173,15 @@
                     <navigationItem key="navigationItem" id="vNs-QS-c2O"/>
                     <connections>
                         <outlet property="blueLabel" destination="ooR-hK-mqo" id="bQU-Yn-097"/>
+                        <outlet property="blueValueTF" destination="7Qb-Fx-c9m" id="Uos-O7-gh2"/>
                         <outlet property="blueslider" destination="znE-YA-Pas" id="4iy-en-qgR"/>
                         <outlet property="colorView" destination="DcA-Es-SOi" id="8WA-g1-pcm"/>
                         <outlet property="greenLabel" destination="4JV-9C-Eyx" id="94I-gN-iXw"/>
                         <outlet property="greenSlider" destination="KCD-D3-opW" id="dYO-qu-uZ2"/>
+                        <outlet property="greenValueTF" destination="CX2-84-QV6" id="eFo-Y4-1Sj"/>
                         <outlet property="redLabel" destination="RHg-DO-79Z" id="D8b-Ns-BLn"/>
                         <outlet property="redSLider" destination="AeS-4I-umA" id="asX-cO-hAV"/>
+                        <outlet property="redValueTF" destination="iTV-d6-Bgv" id="3EI-12-0HW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

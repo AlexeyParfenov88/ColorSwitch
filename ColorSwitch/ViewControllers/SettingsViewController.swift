@@ -21,6 +21,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenLabel: UILabel!
     @IBOutlet var blueLabel: UILabel!
     
+    @IBOutlet var redValueTF: UITextField!
+    @IBOutlet var greenValueTF: UITextField!
+    @IBOutlet var blueValueTF: UITextField!
+    
+    
+    
     var bgColor: UIColor!
     var delegate: SettingsViewControllerDelegate!
     
@@ -54,10 +60,13 @@ class SettingsViewController: UIViewController {
         switch sender.tag {
         case 0:
             redLabel.text = String(format: "%.2f", sender.value)
+            redValueTF.text = redLabel.text
         case 1:
             greenLabel.text = String(format: "%.2f", sender.value)
+            greenValueTF.text = greenLabel.text
         case 2:
             blueLabel.text = String(format: "%.2f", sender.value)
+            blueValueTF.text = blueLabel.text
         default: break
         }
         colorChange()
