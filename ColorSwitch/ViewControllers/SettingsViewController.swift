@@ -46,8 +46,10 @@ class SettingsViewController: UIViewController {
         greenSlider.thumbTintColor = .purple
         blueslider.thumbTintColor = .purple
         
-        
         colorChange()
+        setValueForLabels(for: redLabel, greenLabel, blueLabel)
+        setValueForTextFields(for: redValueTF, greenValueTF, blueValueTF)
+        
     }
 
     func colorChange() {
@@ -56,16 +58,44 @@ class SettingsViewController: UIViewController {
                                             blue: CGFloat(blueslider.value), alpha: 1)
     }
     
+    private func setValueForLabels(for labels: UILabel...) {
+        labels.forEach { label in
+            switch label {
+            case redLabel:
+                redLabel.text = String(format: "%.2f", redSLider.value)
+            case greenLabel:
+                greenLabel.text = String(format: "%.2f", greenSlider.value)
+            default:
+                blueLabel.text = String(format: "%.2f", blueslider.value)
+            }
+        }
+    }
+    
+    private func setValueForTextFields(for textfields: UITextField...) {
+        textfields.forEach { textfield in
+            switch textfield {
+            case redValueTF:
+                redValueTF.text = String(format: "%.2f", redSLider.value)
+            case greenValueTF:
+                greenValueTF.text = String(format: "%.2f", greenSlider.value)
+            default:
+                blueValueTF.text = String(format: "%.2f", blueslider.value)
+                
+            }
+            
+        }
+    }
+    
     @IBAction func grbChangeColor(_ sender: UISlider) {
-        switch sender.tag {
-        case 0:
-            redLabel.text = String(format: "%.2f", sender.value)
+        switch sender {
+        case redSLider:
+            redLabel.text = String(format: "%.2f", redSLider.value)
             redValueTF.text = redLabel.text
-        case 1:
-            greenLabel.text = String(format: "%.2f", sender.value)
+        case greenSlider:
+            greenLabel.text = String(format: "%.2f", greenSlider.value)
             greenValueTF.text = greenLabel.text
-        case 2:
-            blueLabel.text = String(format: "%.2f", sender.value)
+        case blueslider:
+            blueLabel.text = String(format: "%.2f", blueslider.value)
             blueValueTF.text = blueLabel.text
         default: break
         }
@@ -73,6 +103,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneButtomPressed() {
+        view.endEditing(true)
         delegate.changeViewColor(_color: UIColor(
             red: CGFloat(redSLider.value),
             green: CGFloat(greenSlider.value),
