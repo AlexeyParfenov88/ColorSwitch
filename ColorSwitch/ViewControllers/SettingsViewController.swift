@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SettingsViewController: UIViewController {
 
 
@@ -16,10 +17,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueslider: UISlider!
     
-    
     @IBOutlet var redLabel: UILabel!
     @IBOutlet var greenLabel: UILabel!
     @IBOutlet var blueLabel: UILabel!
+    
+    var bgColor: UIColor!
+    var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +40,8 @@ class SettingsViewController: UIViewController {
         greenSlider.thumbTintColor = .purple
         blueslider.thumbTintColor = .purple
         
-        colorChange()
         
+        colorChange()
     }
 
     func colorChange() {
@@ -47,7 +50,7 @@ class SettingsViewController: UIViewController {
                                             blue: CGFloat(blueslider.value), alpha: 1)
     }
     
-    @IBAction func сhangeColor(_ sender: UISlider) {
+    @IBAction func grbChangeColor(_ sender: UISlider) {
         switch sender.tag {
         case 0:
             redLabel.text = String(format: "%.2f", sender.value)
@@ -61,6 +64,10 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneButtomPressed() {
+        delegate.changeViewColor(_color: UIColor(
+            red: CGFloat(redSLider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueslider.value), alpha: 1))
         dismiss(animated: true)
     }
 }

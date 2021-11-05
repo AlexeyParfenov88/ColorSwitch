@@ -21,7 +21,7 @@
                     <navigationItem key="navigationItem" id="H4f-MX-9V4">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="DrH-f9-zTP">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" id="RUz-Pe-idL"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="settingsVC" id="RUz-Pe-idL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -39,11 +39,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-Es-SOi">
-                                <rect key="frame" x="20" y="30" width="374" height="198"/>
+                                <rect key="frame" x="20" y="30" width="382" height="198"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-GZ-aDD">
-                                <rect key="frame" x="20" y="274" width="374" height="104"/>
+                                <rect key="frame" x="20" y="274" width="382" height="104"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-vV-SsY">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="104"/>
@@ -98,22 +98,22 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="1rr-lr-0gl">
-                                        <rect key="frame" x="169" y="0.0" width="205" height="104"/>
+                                        <rect key="frame" x="169" y="0.0" width="213" height="104"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AeS-4I-umA">
-                                                <rect key="frame" x="-2" y="0.0" width="209" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="217" height="31"/>
                                                 <connections>
                                                     <action selector="grbChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="OEV-bR-ZPk"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-D3-opW">
-                                                <rect key="frame" x="-2" y="37" width="209" height="31"/>
+                                                <rect key="frame" x="-2" y="37" width="217" height="31"/>
                                                 <connections>
                                                     <action selector="grbChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="NNc-hx-7q4"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="znE-YA-Pas">
-                                                <rect key="frame" x="-2" y="74" width="209" height="31"/>
+                                                <rect key="frame" x="-2" y="74" width="217" height="31"/>
                                                 <connections>
                                                     <action selector="grbChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dgm-hL-U8t"/>
                                                 </connections>
@@ -123,7 +123,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-7r-tdD">
-                                <rect key="frame" x="159" y="729" width="96.5" height="49"/>
+                                <rect key="frame" x="159" y="728" width="104.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OI5-7r-tdD" secondAttribute="height" multiplier="96:49" id="Fg7-Ut-Huu"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done">
                                     <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
