@@ -58,16 +58,48 @@
 		9EA1D96D27246A68006E1C09 /* ColorSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				9EA1D96E27246A68006E1C09 /* AppDelegate.swift */,
-				9EA1D97027246A68006E1C09 /* SceneDelegate.swift */,
-				9EA1D97227246A68006E1C09 /* SettingsViewController.swift */,
-				9EA1D97427246A68006E1C09 /* Main.storyboard */,
-				9EFCD5A8273491F2005490D4 /* StartViewController.swift */,
-				9EA1D97727246A6A006E1C09 /* Assets.xcassets */,
-				9EA1D97927246A6A006E1C09 /* LaunchScreen.storyboard */,
-				9EA1D97C27246A6A006E1C09 /* Info.plist */,
+				9EFCD5AA27349252005490D4 /* ViewControllers */,
+				9EFCD5AD273492F7005490D4 /* Config */,
+				9EFCD5AB27349285005490D4 /* Storybords */,
+				9EFCD5AC273492C9005490D4 /* Resourses */,
 			);
 			path = ColorSwitch;
+			sourceTree = "<group>";
+		};
+		9EFCD5AA27349252005490D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EA1D97227246A68006E1C09 /* SettingsViewController.swift */,
+				9EFCD5A8273491F2005490D4 /* StartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9EFCD5AB27349285005490D4 /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				9EA1D97427246A68006E1C09 /* Main.storyboard */,
+				9EA1D97927246A6A006E1C09 /* LaunchScreen.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		9EFCD5AC273492C9005490D4 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				9EA1D97727246A6A006E1C09 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		9EFCD5AD273492F7005490D4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9EA1D96E27246A68006E1C09 /* AppDelegate.swift */,
+				9EA1D97027246A68006E1C09 /* SceneDelegate.swift */,
+				9EA1D97C27246A6A006E1C09 /* Info.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N92329592T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorSwitch/Info.plist;
+				INFOPLIST_FILE = ColorSwitch/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N92329592T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorSwitch/Info.plist;
+				INFOPLIST_FILE = ColorSwitch/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

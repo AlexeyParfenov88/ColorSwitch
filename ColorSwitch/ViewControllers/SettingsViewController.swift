@@ -42,10 +42,12 @@ class SettingsViewController: UIViewController {
     }
 
     func colorChange() {
-        colorView.backgroundColor = UIColor(red: CGFloat(redSLider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueslider.value), alpha: 1)
+        colorView.backgroundColor = UIColor(red: CGFloat(redSLider.value),
+                                            green: CGFloat(greenSlider.value),
+                                            blue: CGFloat(blueslider.value), alpha: 1)
     }
     
-    @IBAction func grbChangeColor(_ sender: UISlider) {
+    @IBAction func сhangeColor(_ sender: UISlider) {
         switch sender.tag {
         case 0:
             redLabel.text = String(format: "%.2f", sender.value)
@@ -57,5 +59,8 @@ class SettingsViewController: UIViewController {
         }
         colorChange()
     }
+    
+    @IBAction func doneButtomPressed() {
+        dismiss(animated: true)
+    }
 }
-

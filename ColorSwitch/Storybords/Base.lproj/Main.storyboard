@@ -39,11 +39,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-Es-SOi">
-                                <rect key="frame" x="20" y="30" width="374" height="578"/>
+                                <rect key="frame" x="20" y="30" width="374" height="198"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-GZ-aDD">
-                                <rect key="frame" x="20" y="682" width="374" height="104"/>
+                                <rect key="frame" x="20" y="274" width="374" height="104"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-vV-SsY">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="104"/>
@@ -122,17 +122,34 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-7r-tdD">
+                                <rect key="frame" x="159" y="729" width="96.5" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButtomPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMf-2s-fHC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="DcA-Es-SOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Gy-Zt-746"/>
-                            <constraint firstItem="DcA-Es-SOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CcF-9N-yQB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFT-GZ-aDD" secondAttribute="trailing" constant="20" id="MbE-bN-0ly"/>
-                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qfg-GA-iFe"/>
-                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="top" secondItem="DcA-Es-SOi" secondAttribute="bottom" constant="74" id="ZYT-t5-FD2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CFT-GZ-aDD" secondAttribute="bottom" constant="22" id="nlZ-nx-fev"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcA-Es-SOi" secondAttribute="trailing" constant="20" id="obd-uh-QCq"/>
+                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="274" id="67m-cf-xiA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFT-GZ-aDD" secondAttribute="trailing" constant="20" id="CKs-zT-dAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcA-Es-SOi" secondAttribute="trailing" constant="20" id="Eir-Wq-u1G"/>
+                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IkU-zf-zQP"/>
+                            <constraint firstItem="DcA-Es-SOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kvm-ad-egA"/>
+                            <constraint firstItem="DcA-Es-SOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Qmk-Wb-SGf"/>
+                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="width" secondItem="OI5-7r-tdD" secondAttribute="height" multiplier="374:49" id="Vzu-p2-ioo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OI5-7r-tdD" secondAttribute="trailing" constant="158.5" id="Xlp-OB-Uaz"/>
+                            <constraint firstItem="DcA-Es-SOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cRF-lL-wjO"/>
+                            <constraint firstItem="CFT-GZ-aDD" firstAttribute="top" secondItem="DcA-Es-SOi" secondAttribute="bottom" constant="46" id="cZM-7Q-Jcb"/>
+                            <constraint firstItem="DcA-Es-SOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fZM-8D-xN0"/>
+                            <constraint firstItem="OI5-7r-tdD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="g2X-8h-0Jo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcA-Es-SOi" secondAttribute="trailing" constant="20" id="k0n-k3-2Jq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OI5-7r-tdD" secondAttribute="bottom" constant="30" id="zoh-gb-GWy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vNs-QS-c2O"/>
@@ -148,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406" y="80"/>
+            <point key="canvasLocation" x="1405.7971014492755" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="csl-vM-fWv">
