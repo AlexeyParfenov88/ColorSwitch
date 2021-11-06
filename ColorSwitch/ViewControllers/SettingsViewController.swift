@@ -10,7 +10,6 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redSLider: UISlider!
@@ -78,9 +77,7 @@ class SettingsViewController: UIViewController {
                 greenValueTF.text = String(format: "%.2f", greenSlider.value)
             default:
                 blueValueTF.text = String(format: "%.2f", blueslider.value)
-                
             }
-            
         }
     }
     
@@ -131,13 +128,13 @@ extension SettingsViewController: UITextFieldDelegate{
         guard let numberValue = Float(newValue)
         else {
             showAlert(
-                title: "Wrong value",
-                message: "Value must be Float 0 <= X <= 1"
+                title: "Incorrect value",
+                message: "Value must be Float from 0 to 1"
             )
             return
         }
         if numberValue < 0 || numberValue > 1 {
-            showAlert(title: "Wrong value", message: "Value must be 0 <= X <= 1")
+            showAlert(title: "Incorrect value", message: "Value must be Float from 0 to 1")
             return
         }
     }

@@ -18,7 +18,6 @@ class StartViewController: UIViewController {
         
         settingsVC.bgColor = view.backgroundColor
         settingsVC.delegate = self
-        
         }
     }
 
