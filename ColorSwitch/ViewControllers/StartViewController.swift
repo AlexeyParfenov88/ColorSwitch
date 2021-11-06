@@ -22,7 +22,6 @@ class StartViewController: UIViewController {
         }
     }
 
-
 extension StartViewController: SettingsViewControllerDelegate {
     func changeViewColor(_color: UIColor) {
         view.backgroundColor = _color

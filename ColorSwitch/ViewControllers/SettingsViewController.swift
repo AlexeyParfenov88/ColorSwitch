@@ -25,8 +25,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenValueTF: UITextField!
     @IBOutlet var blueValueTF: UITextField!
     
-    
-    
     var bgColor: UIColor!
     var delegate: SettingsViewControllerDelegate!
     
@@ -111,3 +109,42 @@ class SettingsViewController: UIViewController {
         dismiss(animated: true)
     }
 }
+
+extension SettingsViewController {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+extension SettingsViewController: UITextFieldDelegate{
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let newValue = textField.text else { return }
+        guard let numberValue = Float(newValue)
+        else {
+            showAlert(
+                title: "Wrong value",
+                message: "Value must be Float 0 <= X <= 1"
+            )
+            return
+        }
+        if numberValue < 0 || numberValue > 1 {
+            showAlert(title: "Wrong value", message: "Value must be 0 <= X <= 1")
+            return
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+}
+    
+    
