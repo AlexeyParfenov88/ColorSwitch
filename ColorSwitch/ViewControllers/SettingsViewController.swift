@@ -129,12 +129,12 @@ extension SettingsViewController: UITextFieldDelegate{
         else {
             showAlert(
                 title: "Incorrect value",
-                message: "Value must be Float from 0 to 1"
+                message: "Value must be from 0 to 1"
             )
             return
         }
         if numberValue < 0 || numberValue > 1 {
-            showAlert(title: "Incorrect value", message: "Value must be Float from 0 to 1")
+            showAlert(title: "Incorrect value", message: "Value must be from 0 to 1")
             return
         }
     }
