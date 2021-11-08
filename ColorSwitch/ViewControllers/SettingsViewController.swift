@@ -99,7 +99,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func doneButtomPressed() {
         view.endEditing(true)
-        delegate.changeViewColor(_color: UIColor(
+        delegate.changeViewColor(UIColor(
             red: CGFloat(redSLider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueslider.value), alpha: 1))
